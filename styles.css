@@ -7,11 +7,16 @@ body {
 
 .portfolio {
     padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "title title title";
+    grid-gap: 1em;
 }
 
 .portfolio-title {
     text-align: center;
     color: #00c896;
+    grid-area: title;
 }
 
 img {
